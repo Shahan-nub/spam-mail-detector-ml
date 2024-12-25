@@ -38,12 +38,12 @@ const Form = () => {
           value={emailText}
           onChange={handleInputChange}
           type="textarea"
-          className="bg-stone-800 border-white border-1 rounded-lg px-4 py-4 text-white h-[20vh] w-[40vw] text-nowrap"
+          className="bg-stone-800 border-white border-1 rounded-lg px-4 py-3 text-white h-[30vh]  w-[50vw] max-sm:w-[80vw] text-nowrap"
         />
         <button
           onClick={handleSubmit}
           disabled={!emailText.trim()}
-          className={`rounded-md bg-green-600 font-semibold text-lg px-5 py-3 ${
+          className={`rounded-md bg-green-600 font-semibold text-base px-5 py-3 ${
             emailText.length <= 0 && "opacity-50"
           }`}
         >
